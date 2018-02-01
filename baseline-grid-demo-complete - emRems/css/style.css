@@ -1,55 +1,78 @@
-section {
-	width: 75%; /*960/16*/
-	margin: 1.5em auto; /*24/16*/
-}
+  body {
+    background-color: #fbfbfb;
+  }
 
-body {
-	/*Step 1: Choose a font family;*/
-	font-family: Georgia, serif; 
+  article {
+    width: 960px;
+    margin: 0 auto;
+  }
 
-	/*Step 2: Set your default font size;*/
-	font-size: 88.7%; /*this will be 16px*/
+  img {
+    float: left;
+    margin-right: 1em;
+  }
 
-	/*Step 3: Choose your grid unit size;*/
-	line-height: 1.5; /*16 x 1.5 = 24px*/
+  footer {
+    font-style: italic;
+    color: #777;
+  }
 
-	/*Step 4: Display a visual grid;*/
-	background-image: linear-gradient(#0ff 1px, transparent 1px);
-	background-size: auto 1.5em;
+  /*********************** Your code goes here ***********************/
+  /*Font size*/
+  /* 12, 14, 16, 21, 24, 36, 48, 60, 72 */
 
-	/*Step 5: Choose a typographic scale*/
-	/* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
-}
 
-/*Step 6: style your stuff! */
-h1 {
-	/*divid the target font-size by the current/default font size set by the body. */
-	font-size: 3em; /* 48/16 */
-	/*changing the font size now changes the current context so now that affects t he rest of measurements within this element */
-	/*divide the target line height by the new current context font size*/
-	line-height: 1.5em; /* 72/48 */
-	margin-bottom: 0.5em; /* 24/48 */
-}
+  /*Multiple of 24 for the line height*/
+  /* 24, 48, 72 */
 
-p {
-	margin-bottom: 1.5em; /*24/16*/
-	max-width: 30em; /* 480/16 will always be 30*/
-}
+  /*Math*/
+  /*1.5 X 16 = 24px */
 
-h2 {
-	font-size: 2.25em; /*36/16*/
-	line-height: 1.333em; /*48/36*/
-	margin-bottom: 0.667em; /*24/36*/
-	margin-top: 1.333em; /*48/36*/
-}
+  body{
+    font-family: 'Lato', sans-serif;
+    font-size: 100%; 
+    line-height: 1.5;
+    background-image: linear-gradient(#0ff 1px, transparent 1px);
+    background-size: auto 1.5em;
+  }
+  h1{
+    font-size: 3.75em; /*60/16=3.75*/
+    line-height: 1.2em; /*72/60=1.2*/
+  }
 
-@media screen and (min-width: 50em){
-	body{
-		font-size: 100%
-	}
-}
-@media screen and (min-width: 75em){
-	body{
-		font-size: 112.5%;
-	}
-}
+  /*target size divide by context(font size of parent)*/
+
+  h2{
+    font-size: 3em; /*48/16=3*/
+    margin-top: 3em; 
+  }
+  h2:first-child{
+    margin-top: 0em;
+  }
+  h3{
+    font-size: 2.25em; /*36/16=2.25*/
+    line-height: 3em; /*48/36=1.3333*/
+    margin-top: 3em;
+  }
+  h4{
+    font-size: 1.5em; /*24/16=1.5*/
+    line-height: 3em; 
+  }
+
+
+  h5, section h6{
+    font-size: 1.3125em; /*21/16=1.3125em*/
+    line-height: 1.5em;   
+  }
+
+  p{
+    line-height: 1.5em; /*24/16=1.5em*/
+    margin-bottom: 1.5em; /*24/16=1.5em*/
+    max-width: 30em; /*30em*/
+  }
+
+li{
+    font-size: 0.75em; /*12/16=0.75em*/
+    line-height: 2em; /*24/12*/
+  }
+
